@@ -1,0 +1,43 @@
+name: Fetch Pompano conditions
+
+# Why this exists: the Claude cloud routines that decide GO / NO GO run in a
+# sandbox whose egress proxy blocks essentially everything except GitHub. They
+# cannot reach the lifeguard-flag API, weather.gov, or the water-quality site.
+# This workflow fetches all of it here and commits the result, so the routines
+# can read real data from raw.githubusercontent.com instead of guessing.
+
+on:
+  schedule:
+    # Every 10 minutes from 14:00-16:59 UTC = 10:00 AM - 12:59 PM ET, which
+    # covers the 11:30 / 12:00 / 12:30 ET checks with room to spare. Offset off
+    # the hour because GitHub delays scheduled runs most at :00.
+    - cron: "3,13,23,33,43,53 14-16 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-conditions
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch conditions
+        run: python3 fetch_conditions.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "pompano-relay"
+          git config user.email "actions@github.com"
+          git add conditions.json
+          if git diff --staged --quiet; then
+            echo "no change"
+          else
+            git commit -m "conditions $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

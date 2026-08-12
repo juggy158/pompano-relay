@@ -1,0 +1,186 @@
+{
+  "generated_utc": "2026-08-12T15:31:31+00:00",
+  "generated_et": "2026-08-12 11:31 AM ET",
+  "beach": "Pompano Beach, FL (Broward County)",
+  "flag": {
+    "colors": [
+      "green"
+    ],
+    "flag_says": "GO",
+    "double_red": false,
+    "sea_pests": "Sea Lice",
+    "water_temp_f": 87,
+    "air_temp_f": 89,
+    "unavailable": false,
+    "stale": false,
+    "demo_data": false,
+    "last_updated_utc": "2026-08-12T15:17:12.215Z"
+  },
+  "alerts": [
+    {
+      "event": "Heat Advisory",
+      "severity": "Moderate",
+      "onset": "2026-08-12T12:00:00-04:00",
+      "ends": "2026-08-12T19:00:00-04:00",
+      "headline": "Heat Advisory issued August 12 at 12:57AM EDT until August 12 at 7:00PM EDT by NWS Miami FL"
+    }
+  ],
+  "swim_window_1_to_6pm": {
+    "hours": [
+      {
+        "hour_et": "1 PM",
+        "temp_f": 90,
+        "precip_pct": 7,
+        "forecast": "Sunny",
+        "wind": "7 mph"
+      },
+      {
+        "hour_et": "2 PM",
+        "temp_f": 90,
+        "precip_pct": 35,
+        "forecast": "Chance Showers And Thunderstorms",
+        "wind": "8 mph"
+      },
+      {
+        "hour_et": "3 PM",
+        "temp_f": 90,
+        "precip_pct": 49,
+        "forecast": "Chance Showers And Thunderstorms",
+        "wind": "8 mph"
+      },
+      {
+        "hour_et": "4 PM",
+        "temp_f": 90,
+        "precip_pct": 46,
+        "forecast": "Chance Showers And Thunderstorms",
+        "wind": "8 mph"
+      },
+      {
+        "hour_et": "5 PM",
+        "temp_f": 88,
+        "precip_pct": 42,
+        "forecast": "Chance Showers And Thunderstorms",
+        "wind": "7 mph"
+      },
+      {
+        "hour_et": "6 PM",
+        "temp_f": 88,
+        "precip_pct": 37,
+        "forecast": "Chance Showers And Thunderstorms",
+        "wind": "7 mph"
+      }
+    ],
+    "max_precip_pct": 49,
+    "thunder_in_window": true
+  },
+  "rip_current": {
+    "broward_risk": "Low",
+    "surf_height": "Around 1 foot",
+    "thunderstorm_potential": "Moderate",
+    "waterspout_risk": "None",
+    "max_heat_index": "Up to 108",
+    "issued": "2026-08-12T08:21:00+00:00",
+    "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
+  },
+  "water_quality": {
+    "any_broward_advisory": false,
+    "advisories": [],
+    "nearest_sites_to_pompano": {
+      "COMMERCIAL BLVD PIER": {
+        "site": "COMMERCIAL BLVD PIER",
+        "sampled": "8/3/2026",
+        "enterococcus": "9",
+        "status": "Good",
+        "advisory": "No"
+      },
+      "DEERFIELD BEACH PIER": {
+        "site": "DEERFIELD BEACH PIER",
+        "sampled": "8/3/2026",
+        "enterococcus": "9",
+        "status": "Good",
+        "advisory": "No"
+      }
+    },
+    "all_sites": [
+      {
+        "site": "BAHIA MAR",
+        "sampled": "8/3/2026",
+        "enterococcus": "40",
+        "status": "Good",
+        "advisory": "No"
+      },
+      {
+        "site": "BIRCH STATE PARK",
+        "sampled": "8/3/2026",
+        "enterococcus": "9",
+        "status": "Good",
+        "advisory": "No"
+      },
+      {
+        "site": "COMMERCIAL BLVD PIER",
+        "sampled": "8/3/2026",
+        "enterococcus": "9",
+        "status": "Good",
+        "advisory": "No"
+      },
+      {
+        "site": "CUSTER ST BEACH",
+        "sampled": "8/3/2026",
+        "enterococcus": "9",
+        "status": "Good",
+        "advisory": "No"
+      },
+      {
+        "site": "DANIA BEACH",
+        "sampled": "8/3/2026",
+        "enterococcus": "9",
+        "status": "Good",
+        "advisory": "No"
+      },
+      {
+        "site": "DEERFIELD BEACH PIER",
+        "sampled": "8/3/2026",
+        "enterococcus": "9",
+        "status": "Good",
+        "advisory": "No"
+      },
+      {
+        "site": "DEERFIELD BEACH SE 10TH ST",
+        "sampled": "8/3/2026",
+        "enterococcus": "9",
+        "status": "Good",
+        "advisory": "No"
+      },
+      {
+        "site": "HALLANDALE BEACH BLVD",
+        "sampled": "8/3/2026",
+        "enterococcus": "20",
+        "status": "Good",
+        "advisory": "No"
+      },
+      {
+        "site": "HARRISON STREET",
+        "sampled": "8/3/2026",
+        "enterococcus": "10",
+        "status": "Good",
+        "advisory": "No"
+      },
+      {
+        "site": "JOHN LLOYD PARK",
+        "sampled": "8/3/2026",
+        "enterococcus": "9",
+        "status": "Good",
+        "advisory": "No"
+      }
+    ],
+    "note": "Pompano Beach is not itself a sampled site. Commercial Blvd Pier (south) and Deerfield Beach Pier (north) are the proxies. Sampling is weekly, not live. Only treat this as a veto if an advisory is actually posted."
+  },
+  "errors": [],
+  "sources": {
+    "flag": "https://fortlauderdalebeachwatch.com/api/conditions?beach=pompano",
+    "alerts": "https://api.weather.gov/alerts/active?point=26.24,-80.11",
+    "hourly": "https://api.weather.gov/gridpoints/MFL/111,71/forecast/hourly",
+    "surf_zone_forecast": "https://api.weather.gov/products/types/SRF/locations/MFL",
+    "water_quality": "https://www.floridahealthybeaches.com/county/broward"
+  }
+}
