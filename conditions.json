@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-12T15:43:00+00:00",
-  "generated_et": "2026-08-12 11:43 AM ET",
+  "generated_utc": "2026-08-12T15:51:46+00:00",
+  "generated_et": "2026-08-12 11:51 AM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -182,5 +182,10 @@
     "hourly": "https://api.weather.gov/gridpoints/MFL/111,71/forecast/hourly",
     "surf_zone_forecast": "https://api.weather.gov/products/types/SRF/locations/MFL",
     "water_quality": "https://www.floridahealthybeaches.com/county/broward"
+  },
+  "verdict": {
+    "call": "GO",
+    "stoppers": [],
+    "summary": "The flag is green as of 11:37 AM ET. Rain chance peaks around 49% near 3 PM; get out of the water at the first thunder. Heat index up to 108 - hydrate and take shade breaks. County rip current risk is rated Low (information only). Sea pests reported: Sea Lice. No water quality advisories nearby."
   }
 }

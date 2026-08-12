@@ -203,6 +203,92 @@ def water_quality():
     }
 
 
+def decide(d):
+    """Turn the collected data into GO / NO GO plus a plain-English paragraph.
+
+    Deliberately permissive. The user's standing complaint is over-cautious
+    advice that cost them a week of swimmable beach days, so only genuinely
+    dangerous conditions veto. In particular a "chance of thunderstorms" is the
+    default South Florida afternoon and is NOT a veto on its own.
+    """
+    f = d.get("flag") or {}
+    w = d.get("swim_window_1_to_6pm") or {}
+    r = d.get("rip_current") or {}
+    q = d.get("water_quality") or {}
+    al = d.get("alerts") or []
+
+    stoppers = []
+
+    colors = f.get("colors") or []
+    if f.get("double_red"):
+        stoppers.append("double red flag - the water is closed")
+    elif any("red" in c for c in colors):
+        stoppers.append("red flag - the water is closed")
+
+    for a in al:
+        ev = (a.get("event") or "").lower()
+        if any(k in ev for k in ("thunderstorm", "severe", "tornado", "waterspout", "hurricane", "tropical")):
+            if "watch" not in ev:
+                stoppers.append(f"active {a.get('event')}")
+
+    spout = (r.get("waterspout_risk") or "").strip().lower()
+    if spout and spout not in ("none", "low"):
+        stoppers.append(f"waterspout risk {r.get('waterspout_risk')}")
+
+    tstorm = (r.get("thunderstorm_potential") or "").strip().lower()
+    if tstorm == "high":
+        stoppers.append("high thunderstorm potential")
+
+    mx = w.get("max_precip_pct")
+    likely = any("likely" in (h.get("forecast") or "").lower() for h in (w.get("hours") or []))
+    if mx is not None and mx >= 60 and likely:
+        stoppers.append(f"storms likely, up to {mx}% in the swim window")
+
+    if q.get("any_broward_advisory"):
+        named = ", ".join(a["site"] for a in (q.get("advisories") or []))
+        stoppers.append(f"water quality advisory ({named})")
+
+    call = "NO GO" if stoppers else "GO"
+
+    # Human-readable paragraph, same shape the routines are told to write.
+    bits = []
+    if colors:
+        seen = f.get("last_updated_utc")
+        when = ""
+        if seen:
+            try:
+                when = " as of " + datetime.fromisoformat(
+                    seen.replace("Z", "+00:00")
+                ).astimezone(ET).strftime("%-I:%M %p ET")
+            except ValueError:
+                pass
+        bits.append(f"The flag is {'/'.join(colors)}{when}.")
+    if stoppers:
+        bits.append("Calling it off because: " + "; ".join(stoppers) + ".")
+    hrs = w.get("hours") or []
+    if hrs:
+        peak = max(hrs, key=lambda h: h.get("precip_pct") or 0)
+        if (peak.get("precip_pct") or 0) >= 20:
+            bits.append(
+                f"Rain chance peaks around {peak['precip_pct']}% near {peak['hour_et']}; "
+                "get out of the water at the first thunder."
+            )
+        else:
+            bits.append("The 1-6 PM window looks dry.")
+    if r.get("max_heat_index"):
+        bits.append(f"Heat index {r['max_heat_index'].lower()} - hydrate and take shade breaks.")
+    if r.get("broward_risk"):
+        bits.append(f"County rip current risk is rated {r['broward_risk']} (information only).")
+    if f.get("sea_pests"):
+        bits.append(f"Sea pests reported: {f['sea_pests']}.")
+    if not q.get("any_broward_advisory"):
+        bits.append("No water quality advisories nearby.")
+    if f.get("stale") or f.get("unavailable"):
+        bits.append("Note: the flag feed reported stale or unavailable data, so treat it as unconfirmed.")
+
+    return {"call": call, "stoppers": stoppers, "summary": " ".join(bits)}
+
+
 def main():
     now = datetime.now(timezone.utc)
     data = {
@@ -223,6 +309,7 @@ def main():
             "water_quality": WATER,
         },
     }
+    data["verdict"] = decide(data)
 
     with open("conditions.json", "w") as f:
         json.dump(data, f, indent=2)

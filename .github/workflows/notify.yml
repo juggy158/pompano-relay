@@ -1,0 +1,38 @@
+name: Email beach verdict
+
+# The claude.ai Gmail connector can only draft, never send, so the actual email
+# is sent from here. Fetches fresh data first rather than trusting the last
+# commit, so the verdict in the email is current at send time.
+
+on:
+  schedule:
+    # 15:22 / 15:52 / 16:22 UTC = 11:22 / 11:52 / 12:22 AM-PM ET. Deliberately a
+    # few minutes before the 11:30 / 12:00 / 12:30 routines, because GitHub
+    # delays scheduled runs and it is better to land early than late - the user
+    # leaves for the beach between 1 and 3 PM.
+    - cron: "22,52 15 * * *"
+    - cron: "22 16 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: notify
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch current conditions
+        run: python3 fetch_conditions.py > /dev/null
+
+      - name: Send the email
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+        run: python3 send_email.py
