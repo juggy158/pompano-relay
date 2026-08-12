@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-12T15:31:31+00:00",
-  "generated_et": "2026-08-12 11:31 AM ET",
+  "generated_utc": "2026-08-12T15:43:00+00:00",
+  "generated_et": "2026-08-12 11:43 AM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -10,11 +10,11 @@
     "double_red": false,
     "sea_pests": "Sea Lice",
     "water_temp_f": 87,
-    "air_temp_f": 89,
+    "air_temp_f": 90,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-08-12T15:17:12.215Z"
+    "last_updated_utc": "2026-08-12T15:37:44.740Z"
   },
   "alerts": [
     {
