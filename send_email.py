@@ -63,9 +63,22 @@ def main():
     msg["To"] = to
     msg.set_content("\n".join(body))
 
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ssl.create_default_context()) as s:
-        s.login(user, password)
-        s.send_message(msg)
+    try:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ssl.create_default_context()) as s:
+            s.login(user, password)
+            s.send_message(msg)
+    except smtplib.SMTPAuthenticationError as e:
+        # Never print the password. Print only its shape, which is enough to
+        # tell a mistyped app password from a wrong-account or wrong-kind one.
+        raw = os.environ.get("GMAIL_APP_PASSWORD", "")
+        print("Gmail rejected the credentials.", file=sys.stderr)
+        print(f"  server said     : {e.smtp_code} {e.smtp_error}", file=sys.stderr)
+        print(f"  sending as      : {user}", file=sys.stderr)
+        print(f"  password length : {len(raw)} (an app password is 16)", file=sys.stderr)
+        print(f"  has spaces      : {' ' in raw}", file=sys.stderr)
+        print(f"  all lowercase   : {raw.isalpha() and raw.islower()}", file=sys.stderr)
+        print(f"  stripped length : {len(raw.replace(' ', '').strip())}", file=sys.stderr)
+        return 2
 
     print(f"sent to {to}: {msg['Subject']}")
     return 0
