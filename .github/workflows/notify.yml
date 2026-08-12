@@ -1,21 +1,27 @@
 name: Email beach verdict
 
-# The claude.ai Gmail connector can only draft, never send, so the actual email
-# is sent from here. Fetches fresh data first rather than trusting the last
-# commit, so the verdict in the email is current at send time.
+# Delivery by GitHub notification rather than SMTP. Gmail rejected app-password
+# logins from GitHub's runners (535 BadCredentials, reproduced with two freshly
+# created passwords), and the claude.ai Gmail connector can only draft, never
+# send. Posting the verdict as an issue makes GitHub mail it out, with no
+# credentials to store and nothing that expires.
+#
+# The issue is closed immediately after it is created. The notification email
+# has already been queued by then, so the inbox still gets it while the issue
+# list stays clean.
 
 on:
   schedule:
-    # 15:22 / 15:52 / 16:22 UTC = 11:22 / 11:52 / 12:22 AM-PM ET. Deliberately a
-    # few minutes before the 11:30 / 12:00 / 12:30 routines, because GitHub
-    # delays scheduled runs and it is better to land early than late - the user
-    # leaves for the beach between 1 and 3 PM.
+    # 15:22 / 15:52 / 16:22 UTC = 11:22 / 11:52 AM and 12:22 PM ET. A few minutes
+    # ahead of the 11:30 / 12:00 / 12:30 routines, because GitHub runs scheduled
+    # jobs late and landing early beats landing after they have left.
     - cron: "22,52 15 * * *"
     - cron: "22 16 * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: read
+  issues: write
 
 concurrency:
   group: notify
@@ -30,9 +36,17 @@ jobs:
       - name: Fetch current conditions
         run: python3 fetch_conditions.py > /dev/null
 
-      - name: Send the email
+      - name: Render the issue
         env:
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          MAIL_TO: ${{ secrets.MAIL_TO }}
-        run: python3 send_email.py
+          REPO_OWNER: ${{ github.repository_owner }}
+        run: python3 make_issue.py
+
+      - name: Post it, then close it
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          url=$(gh issue create \
+            --title "$(cat issue_title.txt)" \
+            --body-file issue_body.md)
+          echo "created $url"
+          gh issue close "$url" --comment "Delivered. Closing to keep the list tidy."
