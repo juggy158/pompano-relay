@@ -286,7 +286,108 @@ def decide(d):
     if f.get("stale") or f.get("unavailable"):
         bits.append("Note: the flag feed reported stale or unavailable data, so treat it as unconfirmed.")
 
-    return {"call": call, "stoppers": stoppers, "summary": " ".join(bits)}
+    return {
+        "call": call,
+        "stoppers": stoppers,
+        "summary": " ".join(bits),
+        "explanation": explain(call, stoppers, f, w, r, q, al),
+    }
+
+
+def explain(call, stoppers, f, w, r, q, al):
+    """A plain-English paragraph or two saying what today looks like and why.
+
+    The `summary` field above is a clipped fact list, fine for a push
+    notification. This is the version for reading: it says what the call is,
+    what drove it, what to expect hour to hour, and what would change it.
+    """
+    colors = f.get("colors") or []
+    color = "/".join(colors) if colors else None
+    hours = w.get("hours") or []
+    peak = max(hours, key=lambda h: h.get("precip_pct") or 0) if hours else None
+    peak_pct = (peak or {}).get("precip_pct") or 0
+
+    p1 = []
+
+    if call == "NO GO":
+        p1.append(f"Not today. {stoppers[0].capitalize()}" + ("." if not stoppers[0].endswith(".") else ""))
+        if len(stoppers) > 1:
+            p1.append("There's also " + ", and ".join(stoppers[1:]) + ".")
+        p1.append(
+            "This is the kind of thing that genuinely changes during the day, so it's "
+            "worth a re-check before you write the afternoon off entirely."
+        )
+    else:
+        if color in ("green", "yellow"):
+            calm = "calm" if color == "green" else "a bit of surf or current, but open"
+            p1.append(
+                f"Good to go. The lifeguards have the {color} flag up, which means the water is "
+                f"open and conditions are {calm}."
+            )
+        elif color == "purple":
+            p1.append(
+                "Good to go, with one caveat. The purple flag is up, which sounds alarming but "
+                "only means marine pests - jellyfish or man o' war. The water itself is open. "
+                "Have a look along the sand before you get in; if you see blue balloon-like "
+                "things washed up, pick a different stretch of beach."
+            )
+        else:
+            p1.append("Good to go - nothing dangerous is showing in any of the feeds.")
+
+    # The storm story, which is what actually decides most South Florida afternoons.
+    p2 = []
+    if hours:
+        if peak_pct < 20:
+            p2.append("The afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.")
+        else:
+            wet = [h for h in hours if (h.get("precip_pct") or 0) >= 30]
+            if wet:
+                span = f"{wet[0]['hour_et']} to {wet[-1]['hour_et']}" if len(wet) > 1 else wet[0]["hour_et"]
+                p2.append(
+                    f"Storms are the thing to watch. Rain chances climb through the afternoon, "
+                    f"running highest from about {span} and peaking near {peak_pct}% around "
+                    f"{peak['hour_et']}."
+                )
+            else:
+                p2.append(f"There's a modest storm signal, peaking near {peak_pct}% around {peak['hour_et']}.")
+            p2.append(
+                "That is the normal South Florida summer pattern rather than a washout - it usually "
+                "means a cell builds, rains hard somewhere nearby for twenty minutes, and moves on. "
+                "The rule that matters is lightning: flags say nothing about it, so get out of the "
+                "water at the first rumble and wait half an hour after the last one."
+            )
+
+    # Everything that is worth a mention but never changes the answer.
+    p3 = []
+    if r.get("broward_risk"):
+        p3.append(
+            f"For what it's worth, the county rip current risk is rated {r['broward_risk'].lower()}. "
+            "That number is a forecast written before dawn for the whole coastline and it regularly "
+            "disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
+        )
+    if r.get("max_heat_index"):
+        p3.append(
+            f"Heat is the underrated one today - the index runs {r['max_heat_index'].lower()}°F, so "
+            "bring more water than feels necessary and get in the shade periodically."
+        )
+    if f.get("sea_pests"):
+        pest = f["sea_pests"]
+        if "lice" in pest.lower():
+            p3.append(
+                "Sea lice have been reported. They're tiny jellyfish larvae that get trapped under "
+                "swimwear and leave an itchy rash. Not dangerous, and easy to avoid - rinse off and "
+                "change out of your suit soon after you get out."
+            )
+        else:
+            p3.append(f"Sea pests reported: {pest}. Worth a glance along the waterline before you get in.")
+    if f.get("stale") or f.get("unavailable"):
+        p3.append(
+            "One caveat: the flag feed flagged its own data as stale, so the colour above may be "
+            "behind what is actually flying. Trust your eyes when you arrive."
+        )
+
+    paras = [" ".join(p) for p in (p1, p2, p3) if p]
+    return "\n\n".join(paras)
 
 
 def main():
