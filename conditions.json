@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-12T18:42:08+00:00",
-  "generated_et": "2026-08-12 2:42 PM ET",
+  "generated_utc": "2026-08-13T17:34:20+00:00",
+  "generated_et": "2026-08-13 1:34 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -10,69 +10,29 @@
     "double_red": false,
     "sea_pests": "Sea Lice",
     "water_temp_f": 87,
-    "air_temp_f": 90,
+    "air_temp_f": 91,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-08-12T18:36:52.517Z"
+    "last_updated_utc": "2026-08-13T17:29:03.604Z"
   },
   "alerts": [
     {
       "event": "Heat Advisory",
       "severity": "Moderate",
-      "onset": "2026-08-12T12:00:00-04:00",
-      "ends": "2026-08-12T19:00:00-04:00",
-      "headline": "Heat Advisory issued August 12 at 12:57AM EDT until August 12 at 7:00PM EDT by NWS Miami FL"
+      "onset": "2026-08-13T12:00:00-04:00",
+      "ends": "2026-08-13T19:00:00-04:00",
+      "headline": "Heat Advisory issued August 13 at 1:42AM EDT until August 13 at 7:00PM EDT by NWS Miami FL"
     }
   ],
-  "swim_window_1_to_6pm": {
-    "hours": [
-      {
-        "hour_et": "2 PM",
-        "temp_f": 90,
-        "precip_pct": 25,
-        "forecast": "Chance Showers And Thunderstorms",
-        "wind": "8 mph"
-      },
-      {
-        "hour_et": "3 PM",
-        "temp_f": 90,
-        "precip_pct": 47,
-        "forecast": "Chance Showers And Thunderstorms",
-        "wind": "8 mph"
-      },
-      {
-        "hour_et": "4 PM",
-        "temp_f": 90,
-        "precip_pct": 52,
-        "forecast": "Chance Showers And Thunderstorms",
-        "wind": "8 mph"
-      },
-      {
-        "hour_et": "5 PM",
-        "temp_f": 88,
-        "precip_pct": 34,
-        "forecast": "Chance Showers And Thunderstorms",
-        "wind": "8 mph"
-      },
-      {
-        "hour_et": "6 PM",
-        "temp_f": 88,
-        "precip_pct": 33,
-        "forecast": "Chance Showers And Thunderstorms",
-        "wind": "7 mph"
-      }
-    ],
-    "max_precip_pct": 52,
-    "thunder_in_window": true
-  },
+  "swim_window_1_to_6pm": null,
   "rip_current": {
     "broward_risk": "Low",
     "surf_height": "Around 1 foot",
     "thunderstorm_potential": "Moderate",
     "waterspout_risk": "None",
     "max_heat_index": "Up to 108",
-    "issued": "2026-08-12T08:21:00+00:00",
+    "issued": "2026-08-13T07:51:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -168,7 +128,9 @@
     ],
     "note": "Pompano Beach is not itself a sampled site. Commercial Blvd Pier (south) and Deerfield Beach Pier (north) are the proxies. Sampling is weekly, not live. Only treat this as a veto if an advisory is actually posted."
   },
-  "errors": [],
+  "errors": [
+    "swim_window: HTTPError: HTTP Error 503: Service Unavailable"
+  ],
   "sources": {
     "flag": "https://fortlauderdalebeachwatch.com/api/conditions?beach=pompano",
     "alerts": "https://api.weather.gov/alerts/active?point=26.24,-80.11",
@@ -179,7 +141,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is green as of 2:36 PM ET. Rain chance peaks around 52% near 4 PM; get out of the water at the first thunder. Heat index up to 108 - hydrate and take shade breaks. County rip current risk is rated Low (information only). Sea pests reported: Sea Lice. No water quality advisories nearby.",
-    "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nStorms are the thing to watch. Rain chances climb through the afternoon, running highest from about 3 PM to 6 PM and peaking near 52% around 4 PM. That is the normal South Florida summer pattern rather than a washout - it usually means a cell builds, rains hard somewhere nearby for twenty minutes, and moves on. The rule that matters is lightning: flags say nothing about it, so get out of the water at the first rumble and wait half an hour after the last one.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 108\u00b0F, so bring more water than feels necessary and get in the shade periodically. Sea lice have been reported. They're tiny jellyfish larvae that get trapped under swimwear and leave an itchy rash. Not dangerous, and easy to avoid - rinse off and change out of your suit soon after you get out."
+    "summary": "The flag is green as of 1:29 PM ET. Heat index up to 108 - hydrate and take shade breaks. County rip current risk is rated Low (information only). Sea pests reported: Sea Lice. No water quality advisories nearby.",
+    "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 108\u00b0F, so bring more water than feels necessary and get in the shade periodically. Sea lice have been reported. They're tiny jellyfish larvae that get trapped under swimwear and leave an itchy rash. Not dangerous, and easy to avoid - rinse off and change out of your suit soon after you get out."
   }
 }
