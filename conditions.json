@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-13T17:34:20+00:00",
-  "generated_et": "2026-08-13 1:34 PM ET",
+  "generated_utc": "2026-08-14T16:36:21+00:00",
+  "generated_et": "2026-08-14 12:36 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -8,31 +8,78 @@
     ],
     "flag_says": "GO",
     "double_red": false,
-    "sea_pests": "Sea Lice",
-    "water_temp_f": 87,
-    "air_temp_f": 91,
+    "sea_pests": null,
+    "water_temp_f": 86,
+    "air_temp_f": 90,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-08-13T17:29:03.604Z"
+    "last_updated_utc": "2026-08-14T16:31:02.690Z"
   },
   "alerts": [
     {
       "event": "Heat Advisory",
       "severity": "Moderate",
-      "onset": "2026-08-13T12:00:00-04:00",
-      "ends": "2026-08-13T19:00:00-04:00",
-      "headline": "Heat Advisory issued August 13 at 1:42AM EDT until August 13 at 7:00PM EDT by NWS Miami FL"
+      "onset": "2026-08-14T11:00:00-04:00",
+      "ends": "2026-08-14T19:00:00-04:00",
+      "headline": "Heat Advisory issued August 14 at 1:04AM EDT until August 14 at 7:00PM EDT by NWS Miami FL"
     }
   ],
-  "swim_window_1_to_6pm": null,
+  "swim_window_1_to_6pm": {
+    "hours": [
+      {
+        "hour_et": "1 PM",
+        "temp_f": 90,
+        "precip_pct": 8,
+        "forecast": "Sunny",
+        "wind": "8 mph"
+      },
+      {
+        "hour_et": "2 PM",
+        "temp_f": 90,
+        "precip_pct": 8,
+        "forecast": "Sunny",
+        "wind": "9 mph"
+      },
+      {
+        "hour_et": "3 PM",
+        "temp_f": 89,
+        "precip_pct": 6,
+        "forecast": "Sunny",
+        "wind": "10 mph"
+      },
+      {
+        "hour_et": "4 PM",
+        "temp_f": 90,
+        "precip_pct": 6,
+        "forecast": "Mostly Sunny",
+        "wind": "10 mph"
+      },
+      {
+        "hour_et": "5 PM",
+        "temp_f": 89,
+        "precip_pct": 5,
+        "forecast": "Mostly Sunny",
+        "wind": "10 mph"
+      },
+      {
+        "hour_et": "6 PM",
+        "temp_f": 88,
+        "precip_pct": 5,
+        "forecast": "Mostly Clear",
+        "wind": "10 mph"
+      }
+    ],
+    "max_precip_pct": 8,
+    "thunder_in_window": false
+  },
   "rip_current": {
-    "broward_risk": "Low",
+    "broward_risk": "Moderate",
     "surf_height": "Around 1 foot",
-    "thunderstorm_potential": "Moderate",
+    "thunderstorm_potential": "None",
     "waterspout_risk": "None",
     "max_heat_index": "Up to 108",
-    "issued": "2026-08-13T07:51:00+00:00",
+    "issued": "2026-08-14T08:06:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -128,9 +175,7 @@
     ],
     "note": "Pompano Beach is not itself a sampled site. Commercial Blvd Pier (south) and Deerfield Beach Pier (north) are the proxies. Sampling is weekly, not live. Only treat this as a veto if an advisory is actually posted."
   },
-  "errors": [
-    "swim_window: HTTPError: HTTP Error 503: Service Unavailable"
-  ],
+  "errors": [],
   "sources": {
     "flag": "https://fortlauderdalebeachwatch.com/api/conditions?beach=pompano",
     "alerts": "https://api.weather.gov/alerts/active?point=26.24,-80.11",
@@ -141,7 +186,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is green as of 1:29 PM ET. Heat index up to 108 - hydrate and take shade breaks. County rip current risk is rated Low (information only). Sea pests reported: Sea Lice. No water quality advisories nearby.",
-    "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 108\u00b0F, so bring more water than feels necessary and get in the shade periodically. Sea lice have been reported. They're tiny jellyfish larvae that get trapped under swimwear and leave an itchy rash. Not dangerous, and easy to avoid - rinse off and change out of your suit soon after you get out."
+    "summary": "The flag is green as of 12:31 PM ET. The 1-6 PM window looks dry. Heat index up to 108 - hydrate and take shade breaks. County rip current risk is rated Moderate (information only). No water quality advisories nearby.",
+    "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated moderate. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 108\u00b0F, so bring more water than feels necessary and get in the shade periodically."
   }
 }
