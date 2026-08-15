@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-15T15:41:02+00:00",
-  "generated_et": "2026-08-15 11:41 AM ET",
+  "generated_utc": "2026-08-15T16:01:33+00:00",
+  "generated_et": "2026-08-15 12:01 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -10,11 +10,11 @@
     "double_red": false,
     "sea_pests": null,
     "water_temp_f": 86,
-    "air_temp_f": 90,
+    "air_temp_f": 91,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-08-15T15:35:43.502Z"
+    "last_updated_utc": "2026-08-15T15:50:22.084Z"
   },
   "alerts": [
     {
@@ -186,7 +186,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is yellow as of 11:35 AM ET. The 1-6 PM window looks dry. Heat index up to 109 - hydrate and take shade breaks. County rip current risk is rated Moderate (information only). No water quality advisories nearby.",
+    "summary": "The flag is yellow as of 11:50 AM ET. The 1-6 PM window looks dry. Heat index up to 109 - hydrate and take shade breaks. County rip current risk is rated Moderate (information only). No water quality advisories nearby.",
     "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated moderate. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 109\u00b0F, so bring more water than feels necessary and get in the shade periodically."
   }
 }
