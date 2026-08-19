@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-19T15:16:02+00:00",
-  "generated_et": "2026-08-19 11:16 AM ET",
+  "generated_utc": "2026-08-19T16:52:18+00:00",
+  "generated_et": "2026-08-19 12:52 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -14,15 +14,15 @@
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-08-19T15:10:37.392Z"
+    "last_updated_utc": "2026-08-19T16:46:54.169Z"
   },
   "alerts": [
     {
-      "event": "Heat Advisory",
-      "severity": "Moderate",
-      "onset": "2026-08-19T11:00:00-04:00",
+      "event": "Extreme Heat Warning",
+      "severity": "Severe",
+      "onset": "2026-08-19T11:45:00-04:00",
       "ends": "2026-08-19T19:00:00-04:00",
-      "headline": "Heat Advisory issued August 19 at 12:14AM EDT until August 19 at 7:00PM EDT by NWS Miami FL"
+      "headline": "Extreme Heat Warning issued August 19 at 11:45AM EDT until August 19 at 7:00PM EDT by NWS Miami FL"
     }
   ],
   "swim_window_1_to_6pm": {
@@ -186,7 +186,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is green as of 11:10 AM ET. Rain chance peaks around 40% near 6 PM; get out of the water at the first thunder. Heat index up to 111 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
+    "summary": "The flag is green as of 12:46 PM ET. Rain chance peaks around 40% near 6 PM; get out of the water at the first thunder. Heat index up to 111 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
     "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nStorms are the thing to watch. Rain chances climb through the afternoon, running highest from about 5 PM to 6 PM and peaking near 40% around 6 PM. That is the normal South Florida summer pattern rather than a washout - it usually means a cell builds, rains hard somewhere nearby for twenty minutes, and moves on. The rule that matters is lightning: flags say nothing about it, so get out of the water at the first rumble and wait half an hour after the last one.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 111\u00b0F, so bring more water than feels necessary and get in the shade periodically."
   }
 }
