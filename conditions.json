@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-24T17:50:41+00:00",
-  "generated_et": "2026-08-24 1:50 PM ET",
+  "generated_utc": "2026-08-25T16:09:47+00:00",
+  "generated_et": "2026-08-25 12:09 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -10,11 +10,11 @@
     "double_red": false,
     "sea_pests": null,
     "water_temp_f": 86,
-    "air_temp_f": 90,
+    "air_temp_f": 89,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-08-24T17:45:11.554Z"
+    "last_updated_utc": "2026-08-25T16:00:13.049Z"
   },
   "alerts": [],
   "swim_window_1_to_6pm": {
@@ -22,56 +22,56 @@
       {
         "hour_et": "1 PM",
         "temp_f": 90,
-        "precip_pct": 16,
-        "forecast": "Slight Chance Showers And Thunderstorms",
-        "wind": "7 mph"
+        "precip_pct": 14,
+        "forecast": "Mostly Sunny",
+        "wind": "9 mph"
       },
       {
         "hour_et": "2 PM",
+        "temp_f": 90,
+        "precip_pct": 14,
+        "forecast": "Mostly Sunny",
+        "wind": "10 mph"
+      },
+      {
+        "hour_et": "3 PM",
+        "temp_f": 89,
+        "precip_pct": 18,
+        "forecast": "Slight Chance Showers And Thunderstorms",
+        "wind": "10 mph"
+      },
+      {
+        "hour_et": "4 PM",
+        "temp_f": 90,
+        "precip_pct": 17,
+        "forecast": "Slight Chance Showers And Thunderstorms",
+        "wind": "10 mph"
+      },
+      {
+        "hour_et": "5 PM",
         "temp_f": 89,
         "precip_pct": 15,
         "forecast": "Slight Chance Showers And Thunderstorms",
         "wind": "9 mph"
       },
       {
-        "hour_et": "3 PM",
-        "temp_f": 89,
-        "precip_pct": 13,
-        "forecast": "Partly Sunny",
-        "wind": "9 mph"
-      },
-      {
-        "hour_et": "4 PM",
-        "temp_f": 89,
-        "precip_pct": 10,
-        "forecast": "Partly Sunny",
-        "wind": "9 mph"
-      },
-      {
-        "hour_et": "5 PM",
-        "temp_f": 90,
-        "precip_pct": 4,
-        "forecast": "Mostly Sunny",
-        "wind": "9 mph"
-      },
-      {
         "hour_et": "6 PM",
-        "temp_f": 88,
-        "precip_pct": 4,
-        "forecast": "Partly Cloudy",
+        "temp_f": 89,
+        "precip_pct": 15,
+        "forecast": "Slight Chance Showers And Thunderstorms",
         "wind": "9 mph"
       }
     ],
-    "max_precip_pct": 16,
+    "max_precip_pct": 18,
     "thunder_in_window": true
   },
   "rip_current": {
     "broward_risk": "Low",
-    "surf_height": "1 foot or less",
+    "surf_height": "Around 1 foot",
     "thunderstorm_potential": "Low",
     "waterspout_risk": "None",
     "max_heat_index": "Up to 106",
-    "issued": "2026-08-24T07:26:00+00:00",
+    "issued": "2026-08-25T07:11:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -178,7 +178,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is green as of 1:45 PM ET. The 1-6 PM window looks dry. Heat index up to 106 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
+    "summary": "The flag is green as of 12:00 PM ET. The 1-6 PM window looks dry. Heat index up to 106 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
     "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 106\u00b0F, so bring more water than feels necessary and get in the shade periodically."
   }
 }
