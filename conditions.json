@@ -1,34 +1,49 @@
 {
-  "generated_utc": "2026-08-28T01:29:06+00:00",
-  "generated_et": "2026-08-27 9:29 PM ET",
+  "generated_utc": "2026-08-28T21:58:04+00:00",
+  "generated_et": "2026-08-28 5:58 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
-      "yellow"
+      "green"
     ],
     "flag_says": "GO",
     "double_red": false,
     "sea_pests": null,
     "water_temp_f": 86,
-    "air_temp_f": 82,
+    "air_temp_f": 89,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-08-28T01:19:45.055Z"
+    "last_updated_utc": "2026-08-28T21:47:02.687Z"
   },
   "alerts": [],
   "swim_window_1_to_6pm": {
-    "hours": [],
-    "max_precip_pct": null,
-    "thunder_in_window": false
+    "hours": [
+      {
+        "hour_et": "5 PM",
+        "temp_f": 89,
+        "precip_pct": 16,
+        "forecast": "Slight Chance Showers And Thunderstorms",
+        "wind": "8 mph"
+      },
+      {
+        "hour_et": "6 PM",
+        "temp_f": 89,
+        "precip_pct": 8,
+        "forecast": "Mostly Clear",
+        "wind": "8 mph"
+      }
+    ],
+    "max_precip_pct": 16,
+    "thunder_in_window": true
   },
   "rip_current": {
-    "broward_risk": "Low",
-    "surf_height": "1 foot or less",
+    "broward_risk": "High",
+    "surf_height": "1 to 2 feet",
     "thunderstorm_potential": "Moderate",
     "waterspout_risk": "None",
-    "max_heat_index": "Up to 108",
-    "issued": "2026-08-27T20:01:00+00:00",
+    "max_heat_index": "Up to 109",
+    "issued": "2026-08-28T21:11:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -37,15 +52,15 @@
     "nearest_sites_to_pompano": {
       "COMMERCIAL BLVD PIER": {
         "site": "COMMERCIAL BLVD PIER",
-        "sampled": "8/17/2026",
+        "sampled": "8/24/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       "DEERFIELD BEACH PIER": {
         "site": "DEERFIELD BEACH PIER",
-        "sampled": "8/17/2026",
-        "enterococcus": "9",
+        "sampled": "8/24/2026",
+        "enterococcus": "20",
         "status": "Good",
         "advisory": "No"
       }
@@ -53,57 +68,57 @@
     "all_sites": [
       {
         "site": "BAHIA MAR",
-        "sampled": "8/17/2026",
-        "enterococcus": "10",
+        "sampled": "8/24/2026",
+        "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "BIRCH STATE PARK",
-        "sampled": "8/17/2026",
-        "enterococcus": "30",
+        "sampled": "8/24/2026",
+        "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "COMMERCIAL BLVD PIER",
-        "sampled": "8/17/2026",
+        "sampled": "8/24/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "CUSTER ST BEACH",
-        "sampled": "8/17/2026",
-        "enterococcus": "20",
+        "sampled": "8/24/2026",
+        "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "DANIA BEACH",
-        "sampled": "8/17/2026",
-        "enterococcus": "9",
+        "sampled": "8/24/2026",
+        "enterococcus": "40",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "DEERFIELD BEACH PIER",
-        "sampled": "8/17/2026",
-        "enterococcus": "9",
+        "sampled": "8/24/2026",
+        "enterococcus": "20",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "DEERFIELD BEACH SE 10TH ST",
-        "sampled": "8/17/2026",
+        "sampled": "8/24/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "HALLANDALE BEACH BLVD",
-        "sampled": "8/17/2026",
-        "enterococcus": "9",
+        "sampled": "8/24/2026",
+        "enterococcus": "30",
         "status": "Good",
         "advisory": "No"
       },
@@ -135,7 +150,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is yellow as of 9:19 PM ET. Heat index up to 108 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
-    "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 108\u00b0F, so bring more water than feels necessary and get in the shade periodically."
+    "summary": "The flag is green as of 5:47 PM ET. The 1-6 PM window looks dry. Heat index up to 109 - hydrate and take shade breaks. County rip current risk is rated High (information only). No water quality advisories nearby.",
+    "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated high. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 109\u00b0F, so bring more water than feels necessary and get in the shade periodically."
   }
 }
