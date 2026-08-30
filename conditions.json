@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-29T16:55:56+00:00",
-  "generated_et": "2026-08-29 12:55 PM ET",
+  "generated_utc": "2026-08-30T14:06:10+00:00",
+  "generated_et": "2026-08-30 10:06 AM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -9,12 +9,12 @@
     "flag_says": "GO",
     "double_red": false,
     "sea_pests": null,
-    "water_temp_f": 86,
-    "air_temp_f": 77,
+    "water_temp_f": 87,
+    "air_temp_f": 85,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-08-29T16:44:44.385Z"
+    "last_updated_utc": "2026-08-30T13:53:15.330Z"
   },
   "alerts": [],
   "swim_window_1_to_6pm": {
@@ -22,56 +22,56 @@
       {
         "hour_et": "1 PM",
         "temp_f": 88,
-        "precip_pct": 34,
+        "precip_pct": 52,
         "forecast": "Chance Showers And Thunderstorms",
         "wind": "9 mph"
       },
       {
         "hour_et": "2 PM",
         "temp_f": 88,
-        "precip_pct": 40,
-        "forecast": "Chance Showers And Thunderstorms",
+        "precip_pct": 61,
+        "forecast": "Showers And Thunderstorms Likely",
         "wind": "10 mph"
       },
       {
         "hour_et": "3 PM",
-        "temp_f": 88,
-        "precip_pct": 50,
-        "forecast": "Chance Showers And Thunderstorms",
-        "wind": "10 mph"
+        "temp_f": 87,
+        "precip_pct": 64,
+        "forecast": "Showers And Thunderstorms Likely",
+        "wind": "9 mph"
       },
       {
         "hour_et": "4 PM",
-        "temp_f": 89,
-        "precip_pct": 47,
-        "forecast": "Chance Showers And Thunderstorms",
-        "wind": "10 mph"
+        "temp_f": 88,
+        "precip_pct": 61,
+        "forecast": "Showers And Thunderstorms Likely",
+        "wind": "9 mph"
       },
       {
         "hour_et": "5 PM",
-        "temp_f": 88,
-        "precip_pct": 49,
-        "forecast": "Chance Showers And Thunderstorms",
-        "wind": "10 mph"
+        "temp_f": 87,
+        "precip_pct": 65,
+        "forecast": "Showers And Thunderstorms Likely",
+        "wind": "9 mph"
       },
       {
         "hour_et": "6 PM",
         "temp_f": 87,
-        "precip_pct": 54,
+        "precip_pct": 52,
         "forecast": "Chance Showers And Thunderstorms",
-        "wind": "9 mph"
+        "wind": "8 mph"
       }
     ],
-    "max_precip_pct": 54,
+    "max_precip_pct": 65,
     "thunder_in_window": true
   },
   "rip_current": {
     "broward_risk": "Low",
-    "surf_height": "1 foot or less",
-    "thunderstorm_potential": "Moderate",
+    "surf_height": "1 to 2 feet",
+    "thunderstorm_potential": "High",
     "waterspout_risk": "None",
     "max_heat_index": "Up to 108",
-    "issued": "2026-08-29T08:06:00+00:00",
+    "issued": "2026-08-30T09:21:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -176,9 +176,12 @@
     "water_quality": "https://www.floridahealthybeaches.com/county/broward"
   },
   "verdict": {
-    "call": "GO",
-    "stoppers": [],
-    "summary": "The flag is green as of 12:44 PM ET. Rain chance peaks around 54% near 6 PM; get out of the water at the first thunder. Heat index up to 108 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
-    "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nStorms are the thing to watch. Rain chances climb through the afternoon, running highest from about 1 PM to 6 PM and peaking near 54% around 6 PM. That is the normal South Florida summer pattern rather than a washout - it usually means a cell builds, rains hard somewhere nearby for twenty minutes, and moves on. The rule that matters is lightning: flags say nothing about it, so get out of the water at the first rumble and wait half an hour after the last one.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 108\u00b0F, so bring more water than feels necessary and get in the shade periodically."
+    "call": "NO GO",
+    "stoppers": [
+      "high thunderstorm potential",
+      "storms likely, up to 65% in the swim window"
+    ],
+    "summary": "The flag is green as of 9:53 AM ET. Calling it off because: high thunderstorm potential; storms likely, up to 65% in the swim window. Rain chance peaks around 65% near 5 PM; get out of the water at the first thunder. Heat index up to 108 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
+    "explanation": "Not today. High thunderstorm potential. There's also storms likely, up to 65% in the swim window. This is the kind of thing that genuinely changes during the day, so it's worth a re-check before you write the afternoon off entirely.\n\nStorms are the thing to watch. Rain chances climb through the afternoon, running highest from about 1 PM to 6 PM and peaking near 65% around 5 PM. That is the normal South Florida summer pattern rather than a washout - it usually means a cell builds, rains hard somewhere nearby for twenty minutes, and moves on. The rule that matters is lightning: flags say nothing about it, so get out of the water at the first rumble and wait half an hour after the last one.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 108\u00b0F, so bring more water than feels necessary and get in the shade periodically."
   }
 }
