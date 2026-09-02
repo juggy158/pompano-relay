@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-02T15:35:25+00:00",
-  "generated_et": "2026-09-02 11:35 AM ET",
+  "generated_utc": "2026-09-02T15:51:09+00:00",
+  "generated_et": "2026-09-02 11:51 AM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -14,7 +14,7 @@
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-09-02T15:21:49.517Z"
+    "last_updated_utc": "2026-09-02T15:45:28.446Z"
   },
   "alerts": [],
   "swim_window_1_to_6pm": {
@@ -180,7 +180,7 @@
     "stoppers": [
       "storms likely, up to 60% in the swim window"
     ],
-    "summary": "The flag is green as of 11:21 AM ET. Calling it off because: storms likely, up to 60% in the swim window. Rain chance peaks around 60% near 5 PM; get out of the water at the first thunder. Heat index up to 108 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
+    "summary": "The flag is green as of 11:45 AM ET. Calling it off because: storms likely, up to 60% in the swim window. Rain chance peaks around 60% near 5 PM; get out of the water at the first thunder. Heat index up to 108 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
     "explanation": "Not today. Storms likely, up to 60% in the swim window. This is the kind of thing that genuinely changes during the day, so it's worth a re-check before you write the afternoon off entirely.\n\nStorms are the thing to watch. Rain chances climb through the afternoon, running highest from about 2 PM to 6 PM and peaking near 60% around 5 PM. That is the normal South Florida summer pattern rather than a washout - it usually means a cell builds, rains hard somewhere nearby for twenty minutes, and moves on. The rule that matters is lightning: flags say nothing about it, so get out of the water at the first rumble and wait half an hour after the last one.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 108\u00b0F, so bring more water than feels necessary and get in the shade periodically."
   }
 }
