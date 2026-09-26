@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-25T18:15:47+00:00",
-  "generated_et": "2026-09-25 2:15 PM ET",
+  "generated_utc": "2026-09-26T17:38:03+00:00",
+  "generated_et": "2026-09-26 1:38 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -14,72 +14,79 @@
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-09-25T18:09:37.933Z"
+    "last_updated_utc": "2026-09-26T17:31:52.842Z"
   },
   "alerts": [
     {
       "event": "Rip Current Statement",
       "severity": "Moderate",
-      "onset": "2026-09-25T13:00:00-04:00",
-      "ends": "2026-09-26T20:00:00-04:00",
-      "headline": "Rip Current Statement issued September 25 at 2:08AM EDT until September 26 at 8:00PM EDT by NWS Miami FL"
+      "onset": "2026-09-26T02:30:00-04:00",
+      "ends": "2026-09-27T20:00:00-04:00",
+      "headline": "Rip Current Statement issued September 26 at 2:30AM EDT until September 27 at 8:00PM EDT by NWS Miami FL"
     },
     {
-      "event": "Coastal Flood Statement",
+      "event": "Coastal Flood Advisory",
       "severity": "Minor",
-      "onset": "2026-09-25T06:00:00-04:00",
-      "ends": "2026-09-26T20:00:00-04:00",
-      "headline": "Coastal Flood Statement issued September 25 at 2:08AM EDT until September 26 at 8:00PM EDT by NWS Miami FL"
+      "onset": "2026-09-26T02:30:00-04:00",
+      "ends": "2026-09-27T13:00:00-04:00",
+      "headline": "Coastal Flood Advisory issued September 26 at 2:30AM EDT until September 27 at 1:00PM EDT by NWS Miami FL"
     }
   ],
   "swim_window_1_to_6pm": {
     "hours": [
       {
+        "hour_et": "1 PM",
+        "temp_f": 83,
+        "precip_pct": 3,
+        "forecast": "Sunny",
+        "wind": "9 mph"
+      },
+      {
         "hour_et": "2 PM",
-        "temp_f": 84,
-        "precip_pct": 21,
-        "forecast": "Slight Chance Showers And Thunderstorms",
-        "wind": "14 mph"
+        "temp_f": 83,
+        "precip_pct": 5,
+        "forecast": "Sunny",
+        "wind": "9 mph"
       },
       {
         "hour_et": "3 PM",
-        "temp_f": 83,
-        "precip_pct": 31,
-        "forecast": "Chance Showers And Thunderstorms",
-        "wind": "15 mph"
+        "temp_f": 82,
+        "precip_pct": 10,
+        "forecast": "Sunny",
+        "wind": "9 mph"
       },
       {
         "hour_et": "4 PM",
-        "temp_f": 85,
-        "precip_pct": 26,
-        "forecast": "Chance Showers And Thunderstorms",
-        "wind": "15 mph"
+        "temp_f": 84,
+        "precip_pct": 17,
+        "forecast": "Slight Chance Showers And Thunderstorms",
+        "wind": "9 mph"
       },
       {
         "hour_et": "5 PM",
-        "temp_f": 82,
-        "precip_pct": 19,
-        "forecast": "Slight Chance Showers And Thunderstorms",
-        "wind": "14 mph"
+        "temp_f": 81,
+        "precip_pct": 21,
+        "forecast": "Slight Chance Rain Showers",
+        "wind": "9 mph"
       },
       {
         "hour_et": "6 PM",
-        "temp_f": 82,
-        "precip_pct": 16,
-        "forecast": "Slight Chance Showers And Thunderstorms",
-        "wind": "14 mph"
+        "temp_f": 81,
+        "precip_pct": 15,
+        "forecast": "Slight Chance Rain Showers",
+        "wind": "9 mph"
       }
     ],
-    "max_precip_pct": 31,
+    "max_precip_pct": 21,
     "thunder_in_window": true
   },
   "rip_current": {
     "broward_risk": "High",
     "surf_height": "1 to 2 feet",
-    "thunderstorm_potential": "Low",
+    "thunderstorm_potential": "None",
     "waterspout_risk": "None",
     "max_heat_index": null,
-    "issued": "2026-09-25T13:31:00+00:00",
+    "issued": "2026-09-26T07:21:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -88,14 +95,14 @@
     "nearest_sites_to_pompano": {
       "COMMERCIAL BLVD PIER": {
         "site": "COMMERCIAL BLVD PIER",
-        "sampled": "9/14/2026",
+        "sampled": "9/21/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       "DEERFIELD BEACH PIER": {
         "site": "DEERFIELD BEACH PIER",
-        "sampled": "9/14/2026",
+        "sampled": "9/21/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
@@ -104,64 +111,64 @@
     "all_sites": [
       {
         "site": "BAHIA MAR",
-        "sampled": "9/14/2026",
+        "sampled": "9/21/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "BIRCH STATE PARK",
-        "sampled": "9/14/2026",
+        "sampled": "9/21/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "COMMERCIAL BLVD PIER",
-        "sampled": "9/14/2026",
+        "sampled": "9/21/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "CUSTER ST BEACH",
-        "sampled": "9/14/2026",
+        "sampled": "9/21/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "DANIA BEACH",
-        "sampled": "9/14/2026",
+        "sampled": "9/21/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "DEERFIELD BEACH PIER",
-        "sampled": "9/14/2026",
+        "sampled": "9/21/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "DEERFIELD BEACH SE 10TH ST",
-        "sampled": "9/14/2026",
+        "sampled": "9/21/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "HALLANDALE BEACH BLVD",
-        "sampled": "9/14/2026",
-        "enterococcus": "9",
+        "sampled": "9/21/2026",
+        "enterococcus": "10",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "HARRISON STREET",
-        "sampled": "9/14/2026",
-        "enterococcus": "50",
+        "sampled": "9/21/2026",
+        "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
@@ -186,7 +193,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is yellow as of 2:09 PM ET. Rain chance peaks around 31% near 3 PM; get out of the water at the first thunder. County rip current risk is rated High (information only). No water quality advisories nearby.",
-    "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nStorms are the thing to watch. Rain chances climb through the afternoon, running highest from about 3 PM and peaking near 31% around 3 PM. That is the normal South Florida summer pattern rather than a washout - it usually means a cell builds, rains hard somewhere nearby for twenty minutes, and moves on. The rule that matters is lightning: flags say nothing about it, so get out of the water at the first rumble and wait half an hour after the last one.\n\nFor what it's worth, the county rip current risk is rated high. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
+    "summary": "The flag is yellow as of 1:31 PM ET. Rain chance peaks around 21% near 5 PM; get out of the water at the first thunder. County rip current risk is rated High (information only). No water quality advisories nearby.",
+    "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nThere's a modest storm signal, peaking near 21% around 5 PM. That is the normal South Florida summer pattern rather than a washout - it usually means a cell builds, rains hard somewhere nearby for twenty minutes, and moves on. The rule that matters is lightning: flags say nothing about it, so get out of the water at the first rumble and wait half an hour after the last one.\n\nFor what it's worth, the county rip current risk is rated high. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
   }
 }
