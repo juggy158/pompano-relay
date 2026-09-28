@@ -1,92 +1,64 @@
 {
-  "generated_utc": "2026-09-27T18:03:58+00:00",
-  "generated_et": "2026-09-27 2:03 PM ET",
+  "generated_utc": "2026-09-28T20:24:01+00:00",
+  "generated_et": "2026-09-28 4:24 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
-      "red"
+      "yellow"
     ],
-    "flag_says": "NO GO",
+    "flag_says": "GO",
     "double_red": false,
     "sea_pests": null,
-    "water_temp_f": 85,
+    "water_temp_f": 84,
     "air_temp_f": 84,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-09-27T17:57:46.667Z"
+    "last_updated_utc": "2026-09-28T20:17:50.094Z"
   },
   "alerts": [
     {
       "event": "Coastal Flood Advisory",
       "severity": "Minor",
-      "onset": "2026-09-27T13:36:00-04:00",
-      "ends": "2026-09-28T14:00:00-04:00",
-      "headline": "Coastal Flood Advisory issued September 27 at 1:36PM EDT until September 28 at 2:00PM EDT by NWS Miami FL"
-    },
-    {
-      "event": "Rip Current Statement",
-      "severity": "Moderate",
-      "onset": "2026-09-27T13:36:00-04:00",
-      "ends": "2026-09-28T14:00:00-04:00",
-      "headline": "Rip Current Statement issued September 27 at 1:36PM EDT until September 28 at 2:00PM EDT by NWS Miami FL"
+      "onset": "2026-09-28T12:09:00-04:00",
+      "ends": "2026-09-29T14:00:00-04:00",
+      "headline": "Coastal Flood Advisory issued September 28 at 12:09PM EDT until September 29 at 2:00PM EDT by NWS Miami FL"
     }
   ],
   "swim_window_1_to_6pm": {
     "hours": [
       {
-        "hour_et": "1 PM",
-        "temp_f": 83,
-        "precip_pct": 0,
-        "forecast": "Sunny",
-        "wind": "6 mph"
-      },
-      {
-        "hour_et": "2 PM",
-        "temp_f": 83,
-        "precip_pct": 0,
-        "forecast": "Sunny",
-        "wind": "6 mph"
-      },
-      {
-        "hour_et": "3 PM",
-        "temp_f": 83,
-        "precip_pct": 0,
-        "forecast": "Mostly Sunny",
-        "wind": "6 mph"
-      },
-      {
         "hour_et": "4 PM",
-        "temp_f": 83,
-        "precip_pct": 0,
+        "temp_f": 86,
+        "precip_pct": 1,
         "forecast": "Mostly Sunny",
         "wind": "6 mph"
       },
       {
         "hour_et": "5 PM",
-        "temp_f": 82,
-        "precip_pct": 0,
+        "temp_f": 85,
+        "precip_pct": 1,
         "forecast": "Mostly Sunny",
-        "wind": "6 mph"
+        "wind": "7 mph"
       },
       {
         "hour_et": "6 PM",
-        "temp_f": 81,
-        "precip_pct": 3,
+        "temp_f": 84,
+        "precip_pct": 1,
         "forecast": "Partly Cloudy",
-        "wind": "6 mph"
+        "wind": "7 mph"
       }
     ],
-    "max_precip_pct": 3,
+    "max_precip_pct": 1,
     "thunder_in_window": false
   },
   "rip_current": {
-    "broward_risk": "High",
+    "broward_risk": "Moderate",
     "surf_height": "1 to 2 feet",
     "thunderstorm_potential": "None",
     "waterspout_risk": "None",
     "max_heat_index": null,
-    "issued": "2026-09-27T12:31:00+00:00",
+    "issued": "2026-09-28T20:16:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -191,11 +163,9 @@
     "water_quality": "https://www.floridahealthybeaches.com/county/broward"
   },
   "verdict": {
-    "call": "NO GO",
-    "stoppers": [
-      "red flag - the water is closed"
-    ],
-    "summary": "The flag is red as of 1:57 PM ET. Calling it off because: red flag - the water is closed. The 1-6 PM window looks dry. County rip current risk is rated High (information only). No water quality advisories nearby.",
-    "explanation": "Not today. Red flag - the water is closed. This is the kind of thing that genuinely changes during the day, so it's worth a re-check before you write the afternoon off entirely.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated high. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
+    "call": "GO",
+    "stoppers": [],
+    "summary": "The flag is yellow as of 4:17 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Moderate (information only). No water quality advisories nearby.",
+    "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated moderate. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
   }
 }
