@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-04T18:00:04+00:00",
-  "generated_et": "2026-10-04 2:00 PM ET",
+  "generated_utc": "2026-10-05T21:23:01+00:00",
+  "generated_et": "2026-10-05 5:23 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -14,65 +14,43 @@
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-10-04T18:00:05.617Z"
+    "last_updated_utc": "2026-10-05T21:23:03.777Z"
   },
-  "alerts": [
-    {
-      "event": "Rip Current Statement",
-      "severity": "Moderate",
-      "onset": "2026-10-04T02:40:00-04:00",
-      "ends": "2026-10-04T20:00:00-04:00",
-      "headline": "Rip Current Statement issued October 4 at 2:40AM EDT until October 4 at 8:00PM EDT by NWS Miami FL"
-    }
-  ],
+  "alerts": [],
   "swim_window_1_to_6pm": {
     "hours": [
       {
-        "hour_et": "2 PM",
-        "temp_f": 87,
-        "precip_pct": 11,
-        "forecast": "Mostly Sunny",
-        "wind": "12 mph"
-      },
-      {
-        "hour_et": "3 PM",
-        "temp_f": 87,
-        "precip_pct": 12,
-        "forecast": "Mostly Sunny",
-        "wind": "12 mph"
-      },
-      {
         "hour_et": "4 PM",
-        "temp_f": 88,
-        "precip_pct": 12,
+        "temp_f": 87,
+        "precip_pct": 5,
         "forecast": "Mostly Sunny",
-        "wind": "10 mph"
+        "wind": "8 mph"
       },
       {
         "hour_et": "5 PM",
         "temp_f": 86,
-        "precip_pct": 14,
+        "precip_pct": 7,
         "forecast": "Mostly Sunny",
-        "wind": "9 mph"
+        "wind": "7 mph"
       },
       {
         "hour_et": "6 PM",
         "temp_f": 86,
-        "precip_pct": 12,
+        "precip_pct": 8,
         "forecast": "Partly Cloudy",
-        "wind": "8 mph"
+        "wind": "7 mph"
       }
     ],
-    "max_precip_pct": 14,
+    "max_precip_pct": 8,
     "thunder_in_window": false
   },
   "rip_current": {
-    "broward_risk": "High",
-    "surf_height": "1 to 2 feet",
+    "broward_risk": "Low",
+    "surf_height": "1 foot or less",
     "thunderstorm_potential": "None",
-    "waterspout_risk": "None",
-    "max_heat_index": "Up to 102",
-    "issued": "2026-10-04T08:12:00+00:00",
+    "waterspout_risk": null,
+    "max_heat_index": "Up to 100",
+    "issued": "2026-10-05T20:31:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -179,7 +157,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is yellow as of 2:00 PM ET. The 1-6 PM window looks dry. Heat index up to 102 - hydrate and take shade breaks. County rip current risk is rated High (information only). No water quality advisories nearby.",
-    "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated high. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 102\u00b0F, so bring more water than feels necessary and get in the shade periodically."
+    "summary": "The flag is yellow as of 5:23 PM ET. The 1-6 PM window looks dry. Heat index up to 100 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
+    "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 100\u00b0F, so bring more water than feels necessary and get in the shade periodically."
   }
 }
