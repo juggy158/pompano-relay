@@ -1,10 +1,10 @@
 {
-  "generated_utc": "2026-10-05T21:23:01+00:00",
-  "generated_et": "2026-10-05 5:23 PM ET",
+  "generated_utc": "2026-10-06T19:19:35+00:00",
+  "generated_et": "2026-10-06 3:19 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
-      "yellow"
+      "green"
     ],
     "flag_says": "GO",
     "double_red": false,
@@ -14,43 +14,57 @@
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-10-05T21:23:03.777Z"
+    "last_updated_utc": "2026-10-06T19:19:36.975Z"
   },
   "alerts": [],
   "swim_window_1_to_6pm": {
     "hours": [
       {
+        "hour_et": "2 PM",
+        "temp_f": 87,
+        "precip_pct": 11,
+        "forecast": "Mostly Sunny",
+        "wind": "8 mph"
+      },
+      {
+        "hour_et": "3 PM",
+        "temp_f": 86,
+        "precip_pct": 13,
+        "forecast": "Mostly Sunny",
+        "wind": "8 mph"
+      },
+      {
         "hour_et": "4 PM",
         "temp_f": 87,
-        "precip_pct": 5,
-        "forecast": "Mostly Sunny",
+        "precip_pct": 16,
+        "forecast": "Slight Chance Showers And Thunderstorms",
         "wind": "8 mph"
       },
       {
         "hour_et": "5 PM",
         "temp_f": 86,
-        "precip_pct": 7,
-        "forecast": "Mostly Sunny",
+        "precip_pct": 23,
+        "forecast": "Slight Chance Showers And Thunderstorms",
         "wind": "7 mph"
       },
       {
         "hour_et": "6 PM",
-        "temp_f": 86,
-        "precip_pct": 8,
-        "forecast": "Partly Cloudy",
-        "wind": "7 mph"
+        "temp_f": 85,
+        "precip_pct": 32,
+        "forecast": "Chance Showers And Thunderstorms",
+        "wind": "6 mph"
       }
     ],
-    "max_precip_pct": 8,
-    "thunder_in_window": false
+    "max_precip_pct": 32,
+    "thunder_in_window": true
   },
   "rip_current": {
     "broward_risk": "Low",
     "surf_height": "1 foot or less",
-    "thunderstorm_potential": "None",
-    "waterspout_risk": null,
+    "thunderstorm_potential": "Moderate",
+    "waterspout_risk": "None",
     "max_heat_index": "Up to 100",
-    "issued": "2026-10-05T20:31:00+00:00",
+    "issued": "2026-10-06T08:16:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -157,7 +171,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is yellow as of 5:23 PM ET. The 1-6 PM window looks dry. Heat index up to 100 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
-    "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 100\u00b0F, so bring more water than feels necessary and get in the shade periodically."
+    "summary": "The flag is green as of 3:19 PM ET. Rain chance peaks around 32% near 6 PM; get out of the water at the first thunder. Heat index up to 100 - hydrate and take shade breaks. County rip current risk is rated Low (information only). No water quality advisories nearby.",
+    "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nStorms are the thing to watch. Rain chances climb through the afternoon, running highest from about 6 PM and peaking near 32% around 6 PM. That is the normal South Florida summer pattern rather than a washout - it usually means a cell builds, rains hard somewhere nearby for twenty minutes, and moves on. The rule that matters is lightning: flags say nothing about it, so get out of the water at the first rumble and wait half an hour after the last one.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Heat is the underrated one today - the index runs up to 100\u00b0F, so bring more water than feels necessary and get in the shade periodically."
   }
 }
