@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-10-13T20:06:01+00:00",
-  "generated_et": "2026-10-13 4:06 PM ET",
+  "generated_utc": "2026-10-14T18:20:30+00:00",
+  "generated_et": "2026-10-14 2:20 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -14,50 +14,57 @@
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-10-13T20:06:04.996Z"
+    "last_updated_utc": "2026-10-14T18:20:33.952Z"
   },
   "alerts": [],
   "swim_window_1_to_6pm": {
     "hours": [
       {
+        "hour_et": "2 PM",
+        "temp_f": 86,
+        "precip_pct": 6,
+        "forecast": "Sunny",
+        "wind": "14 mph"
+      },
+      {
         "hour_et": "3 PM",
         "temp_f": 86,
-        "precip_pct": 0,
+        "precip_pct": 7,
         "forecast": "Sunny",
-        "wind": "12 mph"
+        "wind": "14 mph"
       },
       {
         "hour_et": "4 PM",
-        "temp_f": 87,
-        "precip_pct": 1,
+        "temp_f": 86,
+        "precip_pct": 8,
         "forecast": "Sunny",
-        "wind": "12 mph"
+        "wind": "14 mph"
       },
       {
         "hour_et": "5 PM",
-        "temp_f": 85,
-        "precip_pct": 1,
-        "forecast": "Sunny",
-        "wind": "12 mph"
+        "temp_f": 86,
+        "precip_pct": 9,
+        "forecast": "Mostly Sunny",
+        "wind": "14 mph"
       },
       {
         "hour_et": "6 PM",
         "temp_f": 85,
-        "precip_pct": 1,
-        "forecast": "Mostly Clear",
-        "wind": "12 mph"
+        "precip_pct": 11,
+        "forecast": "Partly Cloudy",
+        "wind": "13 mph"
       }
     ],
-    "max_precip_pct": 1,
+    "max_precip_pct": 11,
     "thunder_in_window": false
   },
   "rip_current": {
     "broward_risk": "Low",
     "surf_height": "1 to 2 feet",
-    "thunderstorm_potential": "None",
+    "thunderstorm_potential": "Low",
     "waterspout_risk": "None",
     "max_heat_index": null,
-    "issued": "2026-10-13T08:16:00+00:00",
+    "issued": "2026-10-14T08:41:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -164,7 +171,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is green as of 4:06 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Low (information only). No water quality advisories nearby.",
+    "summary": "The flag is green as of 2:20 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Low (information only). No water quality advisories nearby.",
     "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
   }
 }
