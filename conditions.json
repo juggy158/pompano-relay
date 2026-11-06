@@ -1,55 +1,62 @@
 {
-  "generated_utc": "2026-11-05T20:56:31+00:00",
-  "generated_et": "2026-11-05 4:56 PM ET",
+  "generated_utc": "2026-11-06T20:16:06+00:00",
+  "generated_et": "2026-11-06 4:16 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
-      "yellow"
+      "green"
     ],
     "flag_says": "GO",
     "double_red": false,
-    "sea_pests": null,
-    "water_temp_f": 83,
-    "air_temp_f": 79,
+    "sea_pests": "Man o War",
+    "water_temp_f": 81,
+    "air_temp_f": 81,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-11-05T20:56:34.787Z"
+    "last_updated_utc": "2026-11-06T20:16:08.738Z"
   },
   "alerts": [
     {
       "event": "Coastal Flood Statement",
       "severity": "Minor",
-      "onset": "2026-11-05T10:12:00-05:00",
-      "ends": "2026-11-06T19:00:00-05:00",
-      "headline": "Coastal Flood Statement issued November 5 at 10:12AM EST until November 6 at 7:00PM EST by NWS Miami FL"
+      "onset": "2026-11-06T10:16:00-05:00",
+      "ends": "2026-11-08T19:00:00-05:00",
+      "headline": "Coastal Flood Statement issued November 6 at 10:16AM EST until November 8 at 7:00PM EST by NWS Miami FL"
     }
   ],
   "swim_window_1_to_6pm": {
     "hours": [
       {
+        "hour_et": "3 PM",
+        "temp_f": 82,
+        "precip_pct": 3,
+        "forecast": "Sunny",
+        "wind": "7 mph"
+      },
+      {
         "hour_et": "4 PM",
         "temp_f": 83,
-        "precip_pct": 4,
+        "precip_pct": 3,
         "forecast": "Sunny",
-        "wind": "9 mph"
+        "wind": "7 mph"
       },
       {
         "hour_et": "5 PM",
-        "temp_f": 81,
-        "precip_pct": 4,
+        "temp_f": 82,
+        "precip_pct": 2,
         "forecast": "Sunny",
-        "wind": "9 mph"
+        "wind": "7 mph"
       },
       {
         "hour_et": "6 PM",
         "temp_f": 81,
-        "precip_pct": 3,
+        "precip_pct": 2,
         "forecast": "Sunny",
-        "wind": "8 mph"
+        "wind": "7 mph"
       }
     ],
-    "max_precip_pct": 4,
+    "max_precip_pct": 3,
     "thunder_in_window": false
   },
   "rip_current": {
@@ -58,7 +65,7 @@
     "thunderstorm_potential": "None",
     "waterspout_risk": "None",
     "max_heat_index": null,
-    "issued": "2026-11-05T20:02:00+00:00",
+    "issued": "2026-11-06T15:56:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -165,7 +172,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is yellow as of 4:56 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Low (information only). No water quality advisories nearby.",
-    "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
+    "summary": "The flag is green as of 4:16 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Low (information only). Sea pests reported: Man o War. No water quality advisories nearby.",
+    "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Sea pests reported: Man o War. Worth a glance along the waterline before you get in."
   }
 }
