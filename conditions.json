@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-06T20:16:06+00:00",
-  "generated_et": "2026-11-06 4:16 PM ET",
+  "generated_utc": "2026-11-07T18:29:22+00:00",
+  "generated_et": "2026-11-07 2:29 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -8,55 +8,62 @@
     ],
     "flag_says": "GO",
     "double_red": false,
-    "sea_pests": "Man o War",
-    "water_temp_f": 81,
-    "air_temp_f": 81,
+    "sea_pests": "Man o War/jellyfish",
+    "water_temp_f": 82,
+    "air_temp_f": 82,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-11-06T20:16:08.738Z"
+    "last_updated_utc": "2026-11-07T18:29:26.527Z"
   },
   "alerts": [
     {
       "event": "Coastal Flood Statement",
       "severity": "Minor",
-      "onset": "2026-11-06T10:16:00-05:00",
+      "onset": "2026-11-07T01:19:00-05:00",
       "ends": "2026-11-08T19:00:00-05:00",
-      "headline": "Coastal Flood Statement issued November 6 at 10:16AM EST until November 8 at 7:00PM EST by NWS Miami FL"
+      "headline": "Coastal Flood Statement issued November 7 at 1:19AM EST until November 8 at 7:00PM EST by NWS Miami FL"
     }
   ],
   "swim_window_1_to_6pm": {
     "hours": [
       {
-        "hour_et": "3 PM",
-        "temp_f": 82,
-        "precip_pct": 3,
+        "hour_et": "2 PM",
+        "temp_f": 83,
+        "precip_pct": 6,
         "forecast": "Sunny",
-        "wind": "7 mph"
+        "wind": "6 mph"
+      },
+      {
+        "hour_et": "3 PM",
+        "temp_f": 84,
+        "precip_pct": 7,
+        "forecast": "Sunny",
+        "wind": "6 mph"
       },
       {
         "hour_et": "4 PM",
-        "temp_f": 83,
-        "precip_pct": 3,
+        "temp_f": 82,
+        "precip_pct": 12,
         "forecast": "Sunny",
-        "wind": "7 mph"
+        "wind": "6 mph"
       },
       {
         "hour_et": "5 PM",
         "temp_f": 82,
-        "precip_pct": 2,
-        "forecast": "Sunny",
-        "wind": "7 mph"
+        "precip_pct": 15,
+        "forecast": "Slight Chance Rain Showers",
+        "wind": "6 mph"
       },
       {
         "hour_et": "6 PM",
         "temp_f": 81,
-        "precip_pct": 2,
-        "forecast": "Sunny",
+        "precip_pct": 19,
+        "forecast": "Slight Chance Rain Showers",
         "wind": "7 mph"
       }
     ],
-    "max_precip_pct": 3,
+    "max_precip_pct": 19,
     "thunder_in_window": false
   },
   "rip_current": {
@@ -65,7 +72,7 @@
     "thunderstorm_potential": "None",
     "waterspout_risk": "None",
     "max_heat_index": null,
-    "issued": "2026-11-06T15:56:00+00:00",
+    "issued": "2026-11-07T08:46:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -172,7 +179,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is green as of 4:16 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Low (information only). Sea pests reported: Man o War. No water quality advisories nearby.",
-    "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Sea pests reported: Man o War. Worth a glance along the waterline before you get in."
+    "summary": "The flag is green as of 2:29 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Low (information only). Sea pests reported: Man o War/jellyfish. No water quality advisories nearby.",
+    "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto. Sea pests reported: Man o War/jellyfish. Worth a glance along the waterline before you get in."
   }
 }
