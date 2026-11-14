@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-13T20:46:36+00:00",
-  "generated_et": "2026-11-13 4:46 PM ET",
+  "generated_utc": "2026-11-14T18:57:27+00:00",
+  "generated_et": "2026-11-14 2:57 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -10,38 +10,52 @@
     "double_red": false,
     "sea_pests": null,
     "water_temp_f": 81,
-    "air_temp_f": 75,
+    "air_temp_f": 69,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-11-13T20:46:38.492Z"
+    "last_updated_utc": "2026-11-14T18:57:29.691Z"
   },
   "alerts": [],
   "swim_window_1_to_6pm": {
     "hours": [
       {
-        "hour_et": "4 PM",
-        "temp_f": 77,
-        "precip_pct": 5,
+        "hour_et": "2 PM",
+        "temp_f": 70,
+        "precip_pct": 0,
         "forecast": "Mostly Sunny",
-        "wind": "10 mph"
+        "wind": "12 mph"
+      },
+      {
+        "hour_et": "3 PM",
+        "temp_f": 71,
+        "precip_pct": 0,
+        "forecast": "Mostly Sunny",
+        "wind": "13 mph"
+      },
+      {
+        "hour_et": "4 PM",
+        "temp_f": 70,
+        "precip_pct": 0,
+        "forecast": "Mostly Sunny",
+        "wind": "12 mph"
       },
       {
         "hour_et": "5 PM",
-        "temp_f": 76,
-        "precip_pct": 2,
+        "temp_f": 70,
+        "precip_pct": 0,
         "forecast": "Mostly Sunny",
-        "wind": "10 mph"
+        "wind": "12 mph"
       },
       {
         "hour_et": "6 PM",
-        "temp_f": 76,
+        "temp_f": 69,
         "precip_pct": 0,
         "forecast": "Mostly Sunny",
-        "wind": "9 mph"
+        "wind": "10 mph"
       }
     ],
-    "max_precip_pct": 5,
+    "max_precip_pct": 0,
     "thunder_in_window": false
   },
   "rip_current": {
@@ -50,7 +64,7 @@
     "thunderstorm_potential": "None",
     "waterspout_risk": "None",
     "max_heat_index": null,
-    "issued": "2026-11-13T20:36:00+00:00",
+    "issued": "2026-11-14T08:11:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -59,14 +73,14 @@
     "nearest_sites_to_pompano": {
       "COMMERCIAL BLVD PIER": {
         "site": "COMMERCIAL BLVD PIER",
-        "sampled": "11/3/2026",
-        "enterococcus": "9",
+        "sampled": "11/9/2026",
+        "enterococcus": "10",
         "status": "Good",
         "advisory": "No"
       },
       "DEERFIELD BEACH PIER": {
         "site": "DEERFIELD BEACH PIER",
-        "sampled": "11/3/2026",
+        "sampled": "11/9/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
@@ -75,71 +89,71 @@
     "all_sites": [
       {
         "site": "BAHIA MAR",
-        "sampled": "11/3/2026",
+        "sampled": "11/9/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "BIRCH STATE PARK",
-        "sampled": "11/3/2026",
+        "sampled": "11/9/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "COMMERCIAL BLVD PIER",
-        "sampled": "11/3/2026",
-        "enterococcus": "9",
+        "sampled": "11/9/2026",
+        "enterococcus": "10",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "CUSTER ST BEACH",
-        "sampled": "11/3/2026",
+        "sampled": "11/9/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "DANIA BEACH",
-        "sampled": "11/3/2026",
+        "sampled": "11/9/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "DEERFIELD BEACH PIER",
-        "sampled": "11/3/2026",
+        "sampled": "11/9/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "DEERFIELD BEACH SE 10TH ST",
-        "sampled": "11/3/2026",
+        "sampled": "11/9/2026",
         "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "HALLANDALE BEACH BLVD",
-        "sampled": "11/3/2026",
-        "enterococcus": "10",
+        "sampled": "11/9/2026",
+        "enterococcus": "20",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "HARRISON STREET",
-        "sampled": "11/3/2026",
-        "enterococcus": "10",
+        "sampled": "11/9/2026",
+        "enterococcus": "9",
         "status": "Good",
         "advisory": "No"
       },
       {
         "site": "JOHN LLOYD PARK",
-        "sampled": "11/3/2026",
-        "enterococcus": "9",
+        "sampled": "11/9/2026",
+        "enterococcus": "30",
         "status": "Good",
         "advisory": "No"
       }
@@ -157,7 +171,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is green as of 4:46 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Low (information only). No water quality advisories nearby.",
+    "summary": "The flag is green as of 2:57 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Low (information only). No water quality advisories nearby.",
     "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
   }
 }
