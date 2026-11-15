@@ -1,70 +1,71 @@
 {
-  "generated_utc": "2026-11-14T18:57:27+00:00",
-  "generated_et": "2026-11-14 2:57 PM ET",
+  "generated_utc": "2026-11-15T19:35:20+00:00",
+  "generated_et": "2026-11-15 3:35 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
-      "green"
+      "yellow"
     ],
     "flag_says": "GO",
     "double_red": false,
     "sea_pests": null,
-    "water_temp_f": 81,
-    "air_temp_f": 69,
+    "water_temp_f": 80,
+    "air_temp_f": 75,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-11-14T18:57:29.691Z"
+    "last_updated_utc": "2026-11-15T19:35:22.742Z"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "event": "Rip Current Statement",
+      "severity": "Moderate",
+      "onset": "2026-11-16T07:00:00-05:00",
+      "ends": "2026-11-17T19:00:00-05:00",
+      "headline": "Rip Current Statement issued November 15 at 2:21PM EST until November 17 at 7:00PM EST by NWS Miami FL"
+    }
+  ],
   "swim_window_1_to_6pm": {
     "hours": [
       {
-        "hour_et": "2 PM",
-        "temp_f": 70,
-        "precip_pct": 0,
-        "forecast": "Mostly Sunny",
-        "wind": "12 mph"
-      },
-      {
         "hour_et": "3 PM",
-        "temp_f": 71,
+        "temp_f": 78,
         "precip_pct": 0,
-        "forecast": "Mostly Sunny",
-        "wind": "13 mph"
+        "forecast": "Sunny",
+        "wind": "10 mph"
       },
       {
         "hour_et": "4 PM",
-        "temp_f": 70,
+        "temp_f": 78,
         "precip_pct": 0,
-        "forecast": "Mostly Sunny",
-        "wind": "12 mph"
+        "forecast": "Sunny",
+        "wind": "9 mph"
       },
       {
         "hour_et": "5 PM",
-        "temp_f": 70,
+        "temp_f": 78,
         "precip_pct": 0,
-        "forecast": "Mostly Sunny",
-        "wind": "12 mph"
+        "forecast": "Sunny",
+        "wind": "10 mph"
       },
       {
         "hour_et": "6 PM",
-        "temp_f": 69,
+        "temp_f": 76,
         "precip_pct": 0,
-        "forecast": "Mostly Sunny",
-        "wind": "10 mph"
+        "forecast": "Sunny",
+        "wind": "9 mph"
       }
     ],
     "max_precip_pct": 0,
     "thunder_in_window": false
   },
   "rip_current": {
-    "broward_risk": "Low",
-    "surf_height": "1 foot or less",
+    "broward_risk": "Moderate",
+    "surf_height": "1 to 2 feet",
     "thunderstorm_potential": "None",
     "waterspout_risk": "None",
     "max_heat_index": null,
-    "issued": "2026-11-14T08:11:00+00:00",
+    "issued": "2026-11-15T08:26:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -171,7 +172,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is green as of 2:57 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Low (information only). No water quality advisories nearby.",
-    "explanation": "Good to go. The lifeguards have the green flag up, which means the water is open and conditions are calm.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated low. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
+    "summary": "The flag is yellow as of 3:35 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Moderate (information only). No water quality advisories nearby.",
+    "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated moderate. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
   }
 }
