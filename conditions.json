@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-11-15T19:35:20+00:00",
-  "generated_et": "2026-11-15 3:35 PM ET",
+  "generated_utc": "2026-11-16T23:14:05+00:00",
+  "generated_et": "2026-11-16 7:14 PM ET",
   "beach": "Pompano Beach, FL (Broward County)",
   "flag": {
     "colors": [
@@ -10,62 +10,40 @@
     "double_red": false,
     "sea_pests": null,
     "water_temp_f": 80,
-    "air_temp_f": 75,
+    "air_temp_f": 74,
     "unavailable": false,
     "stale": false,
     "demo_data": false,
-    "last_updated_utc": "2026-11-15T19:35:22.742Z"
+    "last_updated_utc": "2026-11-16T23:14:07.199Z"
   },
   "alerts": [
     {
+      "event": "High Surf Advisory",
+      "severity": "Minor",
+      "onset": "2026-11-17T00:00:00-05:00",
+      "ends": "2026-11-18T19:00:00-05:00",
+      "headline": "High Surf Advisory issued November 16 at 3:38PM EST until November 18 at 7:00PM EST by NWS Miami FL"
+    },
+    {
       "event": "Rip Current Statement",
       "severity": "Moderate",
-      "onset": "2026-11-16T07:00:00-05:00",
-      "ends": "2026-11-17T19:00:00-05:00",
-      "headline": "Rip Current Statement issued November 15 at 2:21PM EST until November 17 at 7:00PM EST by NWS Miami FL"
+      "onset": "2026-11-16T15:38:00-05:00",
+      "ends": "2026-11-18T19:00:00-05:00",
+      "headline": "Rip Current Statement issued November 16 at 3:38PM EST until November 18 at 7:00PM EST by NWS Miami FL"
     }
   ],
   "swim_window_1_to_6pm": {
-    "hours": [
-      {
-        "hour_et": "3 PM",
-        "temp_f": 78,
-        "precip_pct": 0,
-        "forecast": "Sunny",
-        "wind": "10 mph"
-      },
-      {
-        "hour_et": "4 PM",
-        "temp_f": 78,
-        "precip_pct": 0,
-        "forecast": "Sunny",
-        "wind": "9 mph"
-      },
-      {
-        "hour_et": "5 PM",
-        "temp_f": 78,
-        "precip_pct": 0,
-        "forecast": "Sunny",
-        "wind": "10 mph"
-      },
-      {
-        "hour_et": "6 PM",
-        "temp_f": 76,
-        "precip_pct": 0,
-        "forecast": "Sunny",
-        "wind": "9 mph"
-      }
-    ],
-    "max_precip_pct": 0,
+    "hours": [],
+    "max_precip_pct": null,
     "thunder_in_window": false
   },
   "rip_current": {
-    "broward_risk": "Moderate",
-    "surf_height": "1 to 2 feet",
+    "broward_risk": "High",
+    "surf_height": "3 to 4 feet",
     "thunderstorm_potential": "None",
     "waterspout_risk": "None",
     "max_heat_index": null,
-    "issued": "2026-11-15T08:26:00+00:00",
+    "issued": "2026-11-16T20:17:00+00:00",
     "note": "Rip risk is informational only, never a veto - the live flag governs. Thunderstorm and waterspout fields DO matter: those are hard no-goes."
   },
   "water_quality": {
@@ -172,7 +150,7 @@
   "verdict": {
     "call": "GO",
     "stoppers": [],
-    "summary": "The flag is yellow as of 3:35 PM ET. The 1-6 PM window looks dry. County rip current risk is rated Moderate (information only). No water quality advisories nearby.",
-    "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nThe afternoon looks genuinely clear, which is unusual for August - no real storm signal in the 1-6 PM window.\n\nFor what it's worth, the county rip current risk is rated moderate. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
+    "summary": "The flag is yellow as of 7:14 PM ET. County rip current risk is rated High (information only). No water quality advisories nearby.",
+    "explanation": "Good to go. The lifeguards have the yellow flag up, which means the water is open and conditions are a bit of surf or current, but open.\n\nFor what it's worth, the county rip current risk is rated high. That number is a forecast written before dawn for the whole coastline and it regularly disagrees with the flag actually flying at Pompano, so treat it as background, not a veto."
   }
 }
